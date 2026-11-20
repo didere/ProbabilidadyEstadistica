@@ -125,14 +125,27 @@ df = pd.DataFrame({
     "Autoeval_P3": autoeval_p3,
 })
 
+# ==============================================================================
+# VALIDACIÓN Y EXPORTACIÓN DE LA BASE DE DATOS LIMPIA
+# ==============================================================================
 # Verificación de tamaños de grupo requeridos para las pruebas z
 assert (df["Condicion_Laboral"].value_counts() >= 30).all(), "Grupo con n < 30"
 
-# Exportar base de datos limpia a CSV
+# Controles de calidad: sin nulos, sin duplicados, valores dentro de rango
+assert df.isna().sum().sum() == 0, "Hay valores faltantes"
+assert df["ID_Estudiante"].is_unique, "IDs duplicados"
+for col in ["Examen_Admision", "Promedio_General", "Nota_Pre_Taller", "Nota_Post_Taller"]:
+    assert df[col].between(0, 100).all(), f"{col} fuera del rango 0-100"
+for col in ["Nivel_Ansiedad", "Autoeval_P1", "Autoeval_P2", "Autoeval_P3"]:
+    assert df[col].between(1, 5).all(), f"{col} fuera de la escala Likert 1-5"
+assert (df["Ausencias"] >= 0).all() and (df["Horas_Estudio_Semanal"] > 0).all()
+
+# Exportar la base de datos limpia (la misma que usan todas las pruebas de este script)
 archivo_csv = "base_datos_equipo3.csv"
 df.to_csv(archivo_csv, index=False, encoding="utf-8-sig")
 print(
-    f"Base de datos '{archivo_csv}' generada con éxito ({len(df)} registros).\n"
+    f"Base de datos limpia '{archivo_csv}' generada y validada "
+    f"({len(df)} registros, {df.shape[1]} variables, 0 nulos).\n"
 )
 
 
