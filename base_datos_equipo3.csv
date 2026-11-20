@@ -1,0 +1,181 @@
+﻿ID_Estudiante,Facultad,Condicion_Laboral,Modalidad,Examen_Admision,Horas_Estudio_Semanal,Promedio_General,Ausencias,Nota_Pre_Taller,Nota_Post_Taller,Nivel_Ansiedad,Autoeval_P1,Autoeval_P2,Autoeval_P3
+EST-001,Derecho,No trabaja,Presencial,76.2,6.8,88.57,2,74.99,81.73,4,4,4,5
+EST-002,Comercio,No trabaja,Híbrida,80.14,25.5,77.79,5,69.96,73.8,1,3,3,3
+EST-003,Medicina,Trabaja,Híbrida,82.12,4.2,78.89,9,70.49,74.25,5,3,3,4
+EST-004,Derecho,Trabaja,Híbrida,63.75,4.3,75.87,2,73.99,75.93,4,4,4,5
+EST-005,Ingeniería,No trabaja,Virtual,59.66,6.4,83.13,2,71.22,76.45,1,1,2,3
+EST-006,Ingeniería,Trabaja,Híbrida,87.78,10.3,80.34,6,65.44,67.79,4,3,2,2
+EST-007,Ingeniería,Trabaja,Virtual,78.32,6.3,82.21,7,66.75,69.35,5,3,3,4
+EST-008,Comercio,No trabaja,Virtual,67.52,14.0,77.69,6,69.59,78.04,2,4,5,5
+EST-009,Medicina,No trabaja,Presencial,90.51,12.2,82.52,4,61.28,68.25,2,3,3,4
+EST-010,Medicina,No trabaja,Presencial,76.16,13.9,78.62,3,75.47,84.71,1,2,2,2
+EST-011,Ingeniería,No trabaja,Presencial,86.79,15.7,81.56,1,70.16,70.43,4,4,5,5
+EST-012,Comercio,Trabaja,Presencial,75.68,9.6,82.08,4,68.56,75.8,4,2,2,3
+EST-013,Comercio,Trabaja,Presencial,95.61,6.8,84.16,4,76.94,92.86,4,4,5,5
+EST-014,Ingeniería,Trabaja,Híbrida,92.55,18.2,73.43,4,67.1,72.74,4,5,5,5
+EST-015,Ingeniería,No trabaja,Presencial,72.51,5.1,88.78,1,66.63,77.29,4,2,3,4
+EST-016,Ingeniería,No trabaja,Presencial,84.72,17.6,91.46,3,64.37,75.0,4,3,3,2
+EST-017,Ingeniería,Trabaja,Virtual,81.45,2.6,78.77,2,70.57,81.4,3,1,1,2
+EST-018,Derecho,Trabaja,Presencial,88.69,3.5,90.32,6,70.31,78.21,4,2,2,3
+EST-019,Derecho,Trabaja,Virtual,65.35,16.7,72.24,4,63.0,72.58,4,3,3,4
+EST-020,Ingeniería,Trabaja,Híbrida,81.86,9.4,71.65,3,66.67,76.81,3,3,3,3
+EST-021,Medicina,Trabaja,Presencial,85.58,7.5,70.22,7,63.05,72.92,2,4,4,4
+EST-022,Ingeniería,No trabaja,Híbrida,57.41,8.2,90.73,1,62.71,65.22,1,3,3,4
+EST-023,Ingeniería,No trabaja,Híbrida,63.17,19.5,86.1,4,55.03,55.06,3,3,2,2
+EST-024,Derecho,Trabaja,Virtual,54.61,10.8,76.19,6,66.27,66.94,5,4,4,5
+EST-025,Derecho,Trabaja,Virtual,72.31,11.3,78.04,4,55.23,61.3,4,5,5,5
+EST-026,Medicina,No trabaja,Híbrida,82.18,11.0,76.31,3,64.53,74.22,2,1,2,2
+EST-027,Ingeniería,No trabaja,Presencial,90.02,11.5,97.45,3,63.4,65.96,1,5,4,3
+EST-028,Derecho,Trabaja,Presencial,75.74,5.2,80.71,2,75.89,86.97,4,1,1,1
+EST-029,Derecho,No trabaja,Híbrida,91.29,10.3,83.1,4,60.39,65.48,2,4,5,5
+EST-030,Ingeniería,No trabaja,Híbrida,61.2,17.7,86.49,0,62.29,67.42,5,2,2,2
+EST-031,Medicina,No trabaja,Virtual,57.97,7.2,83.15,4,65.14,68.83,3,2,2,2
+EST-032,Ingeniería,Trabaja,Híbrida,74.44,11.3,79.73,6,63.65,62.93,4,2,1,1
+EST-033,Ingeniería,Trabaja,Híbrida,78.84,2.3,74.15,2,78.27,86.43,3,3,4,4
+EST-034,Comercio,No trabaja,Híbrida,74.67,21.5,85.09,5,59.46,73.85,2,2,2,2
+EST-035,Comercio,Trabaja,Híbrida,54.33,12.5,88.85,5,65.15,72.09,1,1,1,2
+EST-036,Comercio,No trabaja,Virtual,74.11,8.3,87.9,3,70.49,69.92,2,3,3,3
+EST-037,Ingeniería,No trabaja,Virtual,61.96,5.4,89.26,2,74.61,85.09,3,4,5,5
+EST-038,Ingeniería,Trabaja,Híbrida,81.7,14.1,75.69,6,65.15,65.53,5,2,2,2
+EST-039,Medicina,Trabaja,Virtual,78.67,3.0,71.06,5,53.61,55.73,4,2,1,2
+EST-040,Derecho,Trabaja,Virtual,65.6,3.5,75.81,5,66.87,73.07,4,2,3,3
+EST-041,Ingeniería,Trabaja,Presencial,69.86,2.1,80.31,4,78.14,85.86,2,1,1,1
+EST-042,Derecho,No trabaja,Virtual,64.41,8.7,86.52,2,70.12,73.08,2,4,5,5
+EST-043,Ingeniería,No trabaja,Presencial,74.37,12.2,74.69,1,69.77,75.81,2,4,4,5
+EST-044,Comercio,No trabaja,Híbrida,84.55,10.8,90.91,0,60.03,70.23,4,3,4,4
+EST-045,Ingeniería,No trabaja,Presencial,65.14,13.0,83.13,5,59.26,70.04,4,2,2,2
+EST-046,Medicina,No trabaja,Virtual,80.04,6.7,78.15,2,68.14,80.6,1,3,4,5
+EST-047,Ingeniería,Trabaja,Híbrida,69.7,1.7,72.93,1,57.3,72.52,2,3,4,4
+EST-048,Derecho,No trabaja,Presencial,67.07,6.7,74.9,0,73.86,84.46,2,4,4,5
+EST-049,Derecho,Trabaja,Virtual,73.93,7.8,81.03,4,61.65,67.94,2,3,3,4
+EST-050,Ingeniería,Trabaja,Presencial,64.65,8.8,80.4,6,67.82,78.63,2,3,3,3
+EST-051,Comercio,Trabaja,Híbrida,69.46,6.5,71.41,5,53.86,63.02,5,3,3,3
+EST-052,Medicina,No trabaja,Virtual,63.02,7.1,73.38,0,65.05,74.38,3,2,2,2
+EST-053,Comercio,No trabaja,Virtual,94.65,14.1,78.65,1,59.11,67.05,1,5,5,5
+EST-054,Comercio,No trabaja,Presencial,75.35,22.5,93.18,0,50.59,53.96,2,3,3,3
+EST-055,Derecho,No trabaja,Híbrida,68.0,25.3,81.07,2,72.06,74.94,2,3,3,3
+EST-056,Comercio,Trabaja,Híbrida,77.14,9.7,70.23,1,80.31,87.1,4,2,2,3
+EST-057,Ingeniería,No trabaja,Presencial,73.88,7.8,82.65,4,76.47,84.3,2,3,4,5
+EST-058,Ingeniería,No trabaja,Presencial,72.79,11.6,82.5,2,73.11,77.46,3,3,2,2
+EST-059,Ingeniería,Trabaja,Híbrida,81.14,4.6,63.67,4,64.89,73.87,3,2,1,2
+EST-060,Ingeniería,No trabaja,Híbrida,82.58,8.9,82.2,4,74.04,89.98,3,1,1,1
+EST-061,Derecho,Trabaja,Virtual,69.69,2.1,75.23,12,77.18,77.05,4,3,3,2
+EST-062,Ingeniería,Trabaja,Virtual,69.24,7.2,80.33,5,69.03,78.68,4,3,3,3
+EST-063,Comercio,Trabaja,Presencial,72.25,6.3,90.17,10,59.12,66.04,3,3,3,3
+EST-064,Derecho,No trabaja,Presencial,51.98,7.2,90.2,2,64.25,73.34,1,2,2,2
+EST-065,Ingeniería,No trabaja,Presencial,59.85,11.2,82.52,2,80.77,86.16,2,3,4,3
+EST-066,Derecho,Trabaja,Híbrida,88.67,7.7,72.41,5,67.44,74.03,2,1,1,2
+EST-067,Ingeniería,No trabaja,Presencial,91.45,7.2,98.15,5,43.06,50.8,2,2,3,4
+EST-068,Comercio,Trabaja,Virtual,72.51,3.4,76.83,4,56.98,62.91,4,2,3,4
+EST-069,Ingeniería,Trabaja,Híbrida,80.77,2.3,78.58,5,64.82,65.63,4,2,3,3
+EST-070,Comercio,Trabaja,Presencial,78.11,3.3,79.87,8,75.77,81.99,4,2,3,3
+EST-071,Medicina,No trabaja,Presencial,100.0,18.1,85.09,1,65.95,67.2,2,2,1,1
+EST-072,Ingeniería,No trabaja,Híbrida,86.2,15.6,81.71,2,75.91,85.85,3,1,1,2
+EST-073,Ingeniería,Trabaja,Híbrida,73.72,3.0,75.34,1,64.05,63.41,4,2,3,4
+EST-074,Comercio,No trabaja,Presencial,65.44,20.7,80.99,2,53.27,64.79,3,3,3,3
+EST-075,Medicina,No trabaja,Presencial,58.94,14.2,83.82,0,64.31,73.31,2,3,3,3
+EST-076,Medicina,No trabaja,Híbrida,77.03,8.9,79.51,4,70.59,79.61,4,2,3,3
+EST-077,Medicina,Trabaja,Presencial,67.44,5.6,76.08,1,69.96,68.07,3,4,5,5
+EST-078,Ingeniería,Trabaja,Virtual,60.78,4.9,77.09,9,58.59,64.41,3,2,3,3
+EST-079,Derecho,No trabaja,Híbrida,68.53,7.8,81.1,5,65.37,77.41,2,3,4,5
+EST-080,Ingeniería,No trabaja,Presencial,64.18,11.0,92.27,5,88.14,93.16,2,1,2,3
+EST-081,Comercio,Trabaja,Presencial,91.87,3.1,65.42,4,58.75,61.42,2,1,1,1
+EST-082,Medicina,Trabaja,Virtual,83.82,14.4,82.5,3,72.96,77.49,2,3,4,3
+EST-083,Ingeniería,No trabaja,Presencial,74.92,30.0,90.85,2,52.27,59.18,4,3,2,3
+EST-084,Ingeniería,No trabaja,Presencial,89.8,11.4,72.6,7,74.48,78.1,3,4,4,4
+EST-085,Ingeniería,Trabaja,Virtual,75.77,3.6,74.62,4,61.31,73.69,3,3,4,3
+EST-086,Ingeniería,Trabaja,Virtual,66.39,2.6,74.46,4,71.02,77.95,4,5,5,5
+EST-087,Medicina,Trabaja,Virtual,90.23,5.5,68.76,5,58.31,63.18,4,1,1,1
+EST-088,Medicina,Trabaja,Virtual,80.39,3.2,72.22,11,70.18,71.91,2,1,1,1
+EST-089,Comercio,No trabaja,Presencial,64.63,11.0,77.89,4,61.19,70.42,2,1,2,3
+EST-090,Derecho,No trabaja,Presencial,73.1,10.6,93.64,3,62.64,71.78,3,2,2,2
+EST-091,Ingeniería,Trabaja,Virtual,66.24,1.4,81.65,2,71.31,75.18,4,3,4,4
+EST-092,Medicina,Trabaja,Híbrida,61.17,6.9,85.49,8,64.77,62.58,4,3,3,4
+EST-093,Medicina,Trabaja,Híbrida,84.26,14.7,82.47,7,70.85,79.78,3,1,2,2
+EST-094,Derecho,Trabaja,Virtual,94.09,7.1,70.29,5,66.57,72.99,4,4,5,5
+EST-095,Medicina,No trabaja,Presencial,61.01,9.5,81.12,2,68.51,77.12,5,4,4,5
+EST-096,Derecho,No trabaja,Presencial,80.63,4.1,86.69,1,71.34,86.76,5,2,2,1
+EST-097,Derecho,Trabaja,Presencial,68.49,6.0,73.28,5,65.37,72.46,3,1,1,2
+EST-098,Derecho,Trabaja,Híbrida,70.13,2.0,82.42,3,60.53,65.57,4,2,3,3
+EST-099,Ingeniería,Trabaja,Presencial,69.08,3.2,78.68,3,64.01,66.39,3,2,3,4
+EST-100,Ingeniería,Trabaja,Presencial,66.36,11.6,77.94,7,76.96,82.85,3,2,3,3
+EST-101,Ingeniería,Trabaja,Presencial,75.49,4.3,83.91,4,68.87,76.74,4,3,3,4
+EST-102,Medicina,No trabaja,Híbrida,66.69,14.2,84.94,4,61.66,69.08,2,2,3,4
+EST-103,Ingeniería,No trabaja,Híbrida,77.7,9.3,80.51,4,71.01,85.45,3,2,3,3
+EST-104,Derecho,No trabaja,Presencial,74.5,6.5,90.38,2,71.51,80.81,2,5,5,5
+EST-105,Comercio,No trabaja,Virtual,72.61,8.5,74.55,0,71.9,78.53,2,3,4,5
+EST-106,Ingeniería,No trabaja,Presencial,65.92,12.0,87.39,4,60.67,64.9,2,4,4,5
+EST-107,Derecho,No trabaja,Presencial,69.23,4.6,87.26,3,62.88,71.2,3,2,1,1
+EST-108,Medicina,No trabaja,Virtual,82.55,21.4,78.8,4,62.92,66.31,4,2,3,4
+EST-109,Ingeniería,No trabaja,Presencial,80.01,12.0,85.79,2,65.3,73.26,2,3,4,4
+EST-110,Ingeniería,No trabaja,Virtual,65.22,12.8,73.62,1,72.04,81.29,4,1,1,1
+EST-111,Ingeniería,No trabaja,Presencial,75.99,14.1,89.08,1,70.22,76.51,3,1,1,1
+EST-112,Ingeniería,No trabaja,Virtual,82.51,20.2,79.48,3,70.81,75.36,4,3,3,3
+EST-113,Comercio,Trabaja,Presencial,58.31,22.1,77.13,5,78.16,76.18,5,3,3,4
+EST-114,Comercio,No trabaja,Virtual,80.43,14.7,86.27,5,73.17,85.17,3,2,2,2
+EST-115,Medicina,No trabaja,Presencial,68.37,6.6,80.13,0,66.94,75.83,1,3,4,5
+EST-116,Comercio,No trabaja,Virtual,80.71,25.4,72.75,2,59.12,68.12,4,2,3,2
+EST-117,Comercio,Trabaja,Presencial,67.37,6.7,71.44,3,62.64,63.28,4,1,1,1
+EST-118,Ingeniería,No trabaja,Presencial,56.95,6.5,87.33,2,66.04,79.04,4,2,2,2
+EST-119,Comercio,Trabaja,Virtual,58.72,3.2,69.46,11,74.22,79.47,3,2,2,2
+EST-120,Derecho,No trabaja,Presencial,75.48,3.2,93.65,5,67.8,73.79,2,1,1,1
+EST-121,Comercio,No trabaja,Híbrida,77.6,7.5,71.05,4,63.08,65.79,2,5,5,5
+EST-122,Comercio,No trabaja,Híbrida,65.96,2.5,91.83,4,62.5,62.19,3,3,4,5
+EST-123,Ingeniería,No trabaja,Presencial,81.39,15.3,85.16,1,67.48,79.54,2,3,3,3
+EST-124,Ingeniería,Trabaja,Híbrida,58.38,5.4,77.97,4,74.67,87.27,3,2,3,3
+EST-125,Ingeniería,Trabaja,Híbrida,74.34,2.1,75.5,5,79.93,86.43,5,2,3,3
+EST-126,Derecho,Trabaja,Virtual,62.89,3.5,78.7,3,66.46,70.81,3,2,3,4
+EST-127,Comercio,No trabaja,Presencial,68.48,9.8,83.79,0,67.66,73.28,5,1,1,2
+EST-128,Comercio,No trabaja,Presencial,75.47,4.9,90.07,1,58.9,64.63,3,2,3,3
+EST-129,Ingeniería,Trabaja,Virtual,66.4,7.6,77.13,9,82.54,84.7,5,3,3,3
+EST-130,Derecho,No trabaja,Virtual,71.15,10.0,81.33,2,57.49,63.46,2,3,3,3
+EST-131,Derecho,No trabaja,Presencial,85.06,8.5,82.0,1,76.79,84.63,3,3,2,3
+EST-132,Ingeniería,No trabaja,Híbrida,69.23,6.5,82.19,0,65.26,76.74,3,3,3,2
+EST-133,Ingeniería,No trabaja,Presencial,83.36,5.4,85.69,1,63.5,70.76,3,4,3,3
+EST-134,Ingeniería,Trabaja,Presencial,63.7,4.7,70.59,4,59.67,60.25,2,1,1,1
+EST-135,Comercio,Trabaja,Híbrida,80.3,6.0,71.08,1,86.08,94.76,4,2,2,2
+EST-136,Ingeniería,Trabaja,Híbrida,89.42,4.3,82.59,3,69.66,75.79,5,2,3,3
+EST-137,Derecho,No trabaja,Presencial,50.28,20.9,84.94,1,68.16,81.12,2,3,4,5
+EST-138,Medicina,No trabaja,Presencial,67.03,16.4,82.99,3,74.65,87.85,3,5,5,5
+EST-139,Derecho,No trabaja,Virtual,80.77,10.2,80.6,3,63.12,76.47,2,2,3,4
+EST-140,Comercio,No trabaja,Virtual,72.97,6.7,82.41,2,68.01,72.85,3,4,5,5
+EST-141,Comercio,No trabaja,Híbrida,78.71,16.2,79.53,6,68.42,83.98,2,4,5,4
+EST-142,Ingeniería,Trabaja,Híbrida,68.96,1.9,74.22,5,64.16,72.83,3,2,1,2
+EST-143,Derecho,Trabaja,Híbrida,75.87,2.1,79.58,1,77.0,91.03,3,2,3,3
+EST-144,Ingeniería,No trabaja,Híbrida,73.44,11.0,77.12,1,66.36,71.45,2,2,3,4
+EST-145,Ingeniería,Trabaja,Híbrida,86.68,7.7,80.75,1,56.35,62.3,3,5,5,5
+EST-146,Ingeniería,Trabaja,Presencial,77.54,8.8,70.64,9,65.74,74.09,4,2,2,1
+EST-147,Medicina,No trabaja,Virtual,78.38,6.7,86.16,1,69.87,77.71,3,3,3,4
+EST-148,Derecho,Trabaja,Virtual,70.88,1.1,79.1,3,61.3,73.77,4,2,3,3
+EST-149,Ingeniería,No trabaja,Virtual,70.12,13.2,81.91,0,61.89,68.12,1,3,3,4
+EST-150,Ingeniería,No trabaja,Híbrida,70.67,7.0,87.9,4,63.9,75.99,3,2,1,1
+EST-151,Comercio,No trabaja,Híbrida,78.94,24.5,91.66,1,77.16,87.44,2,3,3,4
+EST-152,Ingeniería,Trabaja,Híbrida,70.79,7.9,84.08,4,64.35,70.65,2,4,5,4
+EST-153,Ingeniería,No trabaja,Virtual,77.9,10.1,70.38,1,78.72,88.67,4,4,5,5
+EST-154,Derecho,No trabaja,Virtual,95.75,10.5,73.46,1,63.39,68.6,2,4,3,4
+EST-155,Comercio,No trabaja,Presencial,83.71,8.5,80.56,0,70.44,87.51,2,1,2,3
+EST-156,Ingeniería,No trabaja,Presencial,71.74,3.6,84.14,2,64.65,60.66,1,3,3,4
+EST-157,Medicina,Trabaja,Híbrida,87.01,2.1,81.35,4,73.66,83.69,3,2,3,4
+EST-158,Medicina,Trabaja,Virtual,70.92,1.8,72.51,5,59.61,59.4,2,2,3,4
+EST-159,Ingeniería,No trabaja,Virtual,54.62,11.2,81.53,5,73.57,79.82,1,3,4,4
+EST-160,Medicina,No trabaja,Presencial,64.92,17.5,79.85,2,68.85,75.69,3,2,3,3
+EST-161,Derecho,No trabaja,Presencial,56.29,17.8,80.64,6,63.2,76.73,2,3,3,3
+EST-162,Medicina,No trabaja,Presencial,71.48,9.6,76.26,2,66.75,71.04,3,5,5,5
+EST-163,Medicina,No trabaja,Virtual,75.18,14.2,75.42,4,79.5,92.19,2,2,1,1
+EST-164,Derecho,No trabaja,Híbrida,91.76,3.8,75.07,1,69.03,71.28,2,3,4,4
+EST-165,Ingeniería,No trabaja,Híbrida,78.27,21.7,77.13,2,62.73,75.59,3,2,3,3
+EST-166,Comercio,Trabaja,Híbrida,72.81,13.9,84.3,9,58.96,64.17,5,2,3,4
+EST-167,Ingeniería,Trabaja,Híbrida,83.29,7.3,73.28,7,71.79,79.3,4,2,2,2
+EST-168,Ingeniería,No trabaja,Presencial,52.89,11.4,98.48,3,69.47,75.26,4,4,5,5
+EST-169,Ingeniería,No trabaja,Presencial,77.36,9.7,86.71,1,73.21,85.8,3,4,4,4
+EST-170,Derecho,Trabaja,Virtual,82.71,6.1,77.52,5,57.03,68.8,4,4,3,4
+EST-171,Medicina,No trabaja,Híbrida,60.21,15.2,77.78,1,59.21,68.27,3,5,5,5
+EST-172,Ingeniería,Trabaja,Virtual,86.44,2.7,80.35,10,76.6,78.96,4,2,2,3
+EST-173,Derecho,Trabaja,Virtual,78.38,2.6,73.33,10,70.49,74.69,5,2,3,3
+EST-174,Ingeniería,No trabaja,Presencial,70.85,4.5,84.67,1,72.0,74.88,3,3,3,3
+EST-175,Medicina,No trabaja,Híbrida,81.33,18.6,96.58,0,60.78,58.54,2,3,3,2
+EST-176,Ingeniería,Trabaja,Virtual,97.71,8.6,75.97,4,60.64,73.14,2,2,3,3
+EST-177,Medicina,No trabaja,Híbrida,76.82,12.9,88.82,6,75.43,81.25,2,2,2,2
+EST-178,Derecho,No trabaja,Presencial,77.48,10.3,80.13,3,75.79,81.57,1,3,3,2
+EST-179,Comercio,Trabaja,Híbrida,70.41,4.3,78.31,6,59.84,73.32,4,3,4,4
+EST-180,Ingeniería,No trabaja,Presencial,66.5,3.9,93.74,4,58.4,63.6,2,2,2,3

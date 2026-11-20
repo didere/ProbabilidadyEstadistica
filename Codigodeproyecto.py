@@ -21,7 +21,7 @@ facultades = np.random.choice(
 condicion_laboral = np.random.choice(
     ["No trabaja", "Trabaja"],
     size=N,
-    p=[0.60, 0.40],  # Garantiza n >= 30 en ambos grupos para pruebas z
+    p=[0.60, 0.40],  # Se verifica con un assert más abajo que n >= 30 en ambos grupos
 )
 
 # La modalidad depende ligeramente de si el alumno trabaja o no
@@ -43,7 +43,9 @@ modalidad = np.array(modalidad)
 
 # --- Variables Cuantitativas Continuas y Discretas ---
 # 1) Examen de admisión: Normal con parámetros poblacionales conocidos (mu=75, sigma=10)
-examen_admision = np.round(np.random.normal(loc=75.0, scale=10.0, size=N), 2)
+examen_admision = np.clip(
+    np.round(np.random.normal(loc=75.0, scale=10.0, size=N), 2), 0, 100
+)
 
 # 2) Promedio general (0-100): Normal con homocedasticidad entre grupos (sigma desconocida)
 efecto_trabajo = np.where(condicion_laboral == "No trabaja", 82.5, 78.5)
@@ -123,6 +125,9 @@ df = pd.DataFrame({
     "Autoeval_P3": autoeval_p3,
 })
 
+# Verificación de tamaños de grupo requeridos para las pruebas z
+assert (df["Condicion_Laboral"].value_counts() >= 30).all(), "Grupo con n < 30"
+
 # Exportar base de datos limpia a CSV
 archivo_csv = "base_datos_equipo3.csv"
 df.to_csv(archivo_csv, index=False, encoding="utf-8-sig")
@@ -138,7 +143,7 @@ def reportar_prueba(num, nombre, estadistico, p_valor, detalle=""):
         if p_valor < ALPHA
         else "No rechazar H0 (No significativo)"
     )
-    print(f"{num:2d}. {nombre}")
+    print(f"{str(num):>3}. {nombre}")
     if detalle:
         print(f"    Contexto   : {detalle}")
     print(
@@ -167,7 +172,7 @@ reportar_prueba(
 )
 
 # 2. Prueba de Kolmogorov-Smirnov (Examen_Admision vs Normal(75, 10))
-ks_stat, p_ks = stats.kstest(df["Examen_Admision"], "norm", args=(75.0, 10.0))
+ks_stat, p_ks = stats.kstest(df["Examen_Admision"], stats.norm(75.0, 10.0).cdf)
 reportar_prueba(
     2,
     "Kolmogorov-Smirnov (1 muestra)",
@@ -177,6 +182,7 @@ reportar_prueba(
 )
 
 # 3. Prueba de Shapiro-Wilk (Submuestra n=50 de Promedio_General)
+# Nota: el resultado puede estar cerca de α; la decisión depende de la submuestra elegida.
 submuestra_prom = df["Promedio_General"].sample(n=50, random_state=42)
 sw_stat, p_sw = stats.shapiro(submuestra_prom)
 reportar_prueba(
@@ -210,7 +216,7 @@ mu_0_z = 73.0
 sigma_conocida = 10.0
 media_adm = df["Examen_Admision"].mean()
 z_1m = (media_adm - mu_0_z) / (sigma_conocida / np.sqrt(N))
-p_z_1m = 2 * (1 - stats.norm.cdf(abs(z_1m)))
+p_z_1m = 2 * stats.norm.sf(abs(z_1m))
 reportar_prueba(
     5,
     "Prueba z para una sola muestra",
@@ -231,6 +237,8 @@ reportar_prueba(
 )
 
 # 7. Prueba de Wilcoxon Signed-Rank para 1 muestra (Mediana de Horas_Estudio vs M_0 = 8)
+# Limitación a mencionar en el informe: la prueba supone simetría alrededor de la mediana
+# y Horas_Estudio es sesgada (Gamma).
 mediana_0 = 8.0
 w_1m, p_w_1m = stats.wilcoxon(df["Horas_Estudio_Semanal"] - mediana_0)
 reportar_prueba(
@@ -274,12 +282,16 @@ t_ind, p_t_ind = stats.ttest_ind(
     trabaja["Promedio_General"],
     equal_var=varianzas_iguales,
 )
+sp = np.sqrt(((len(no_trabaja) - 1) * no_trabaja["Promedio_General"].var(ddof=1)
+              + (len(trabaja) - 1) * trabaja["Promedio_General"].var(ddof=1))
+             / (len(no_trabaja) + len(trabaja) - 2))
+d_cohen_ind = (no_trabaja["Promedio_General"].mean() - trabaja["Promedio_General"].mean()) / sp
 reportar_prueba(
     9,
     "Prueba t para dos muestras independientes",
     t_ind,
     p_t_ind,
-    f"Promedio_General: No trabaja vs Trabaja (Levene p={p_levene:.4f} -> equal_var={varianzas_iguales})",
+    f"Promedio_General: No trabaja vs Trabaja (Levene p={p_levene:.4f} -> equal_var={varianzas_iguales}); d de Cohen={d_cohen_ind:.2f}",
 )
 
 # 10. Prueba z para dos muestras independientes (muestras grandes: n1, n2 >= 30)
@@ -293,7 +305,7 @@ s1, s2 = (
 )
 n1, n2 = len(no_trabaja), len(trabaja)
 z_ind = (x1 - x2) / np.sqrt((s1**2 / n1) + (s2**2 / n2))
-p_z_ind = 2 * (1 - stats.norm.cdf(abs(z_ind)))
+p_z_ind = 2 * stats.norm.sf(abs(z_ind))
 reportar_prueba(
     10,
     "Prueba z para dos muestras independientes",
@@ -316,6 +328,20 @@ reportar_prueba(
     "Horas_Estudio_Semanal (no normal): No trabaja vs Trabaja",
 )
 
+# 11b. Complemento: Mann-Whitney con variable ORDINAL (Nivel_Ansiedad, Likert 1-5)
+u_ans, p_ans = stats.mannwhitneyu(
+    no_trabaja["Nivel_Ansiedad"],
+    trabaja["Nivel_Ansiedad"],
+    alternative="two-sided",
+)
+reportar_prueba(
+    "11b",
+    "Wilcoxon Rank-Sum (Mann-Whitney U) - ordinal",
+    u_ans,
+    p_ans,
+    "Nivel_Ansiedad (ordinal 1-5): No trabaja vs Trabaja",
+)
+
 # 12. Prueba t-Student para dos muestras dependientes / pareadas (Pre vs Post Taller)
 t_par, p_t_par = stats.ttest_rel(df["Nota_Post_Taller"], df["Nota_Pre_Taller"])
 reportar_prueba(
@@ -323,13 +349,14 @@ reportar_prueba(
     "Prueba t-Student pareada (2 muestras dependientes)",
     t_par,
     p_t_par,
-    "Nota_Post_Taller vs Nota_Pre_Taller en el mismo estudiante",
+    f"Nota_Post_Taller vs Nota_Pre_Taller en el mismo estudiante; d de Cohen (pareada)="
+    f"{(df['Nota_Post_Taller'] - df['Nota_Pre_Taller']).mean() / (df['Nota_Post_Taller'] - df['Nota_Pre_Taller']).std(ddof=1):.2f}",
 )
 
 # 13. Prueba z para dos muestras dependientes (muestra grande emparejada, N=180)
 diferencias = df["Nota_Post_Taller"] - df["Nota_Pre_Taller"]
 z_par = diferencias.mean() / (diferencias.std(ddof=1) / np.sqrt(N))
-p_z_par = 2 * (1 - stats.norm.cdf(abs(z_par)))
+p_z_par = 2 * stats.norm.sf(abs(z_par))
 reportar_prueba(
     13,
     "Prueba z pareada (2 muestras dependientes)",
@@ -360,6 +387,12 @@ print("=" * 80)
 g_pres = df[df["Modalidad"] == "Presencial"]["Promedio_General"]
 g_hib = df[df["Modalidad"] == "Híbrida"]["Promedio_General"]
 g_virt = df[df["Modalidad"] == "Virtual"]["Promedio_General"]
+
+# Verificación de supuestos de ANOVA: homocedasticidad (Levene) y normalidad de residuos (Shapiro)
+lev_a, p_lev_a = stats.levene(g_pres, g_hib, g_virt)
+residuos = pd.concat([g - g.mean() for g in (g_pres, g_hib, g_virt)])
+sw_res, p_sw_res = stats.shapiro(residuos)
+print(f"    Supuestos ANOVA -> Levene p={p_lev_a:.4f} | Shapiro (residuos) p={p_sw_res:.4f}\n")
 
 f_stat, p_anova = stats.f_oneway(g_pres, g_hib, g_virt)
 reportar_prueba(
